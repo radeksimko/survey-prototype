@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Results</title>
+    <meta name="viewport" content="width=device-width"/>
+    <script src="./js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/dexie.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+<style type="text/css">
+body {text-align: center;}
+h1 {text-align: center}
+table tr td {text-align: left; vertical-align: top;}
+#feedback-results {padding: 0 30px 0 30px}
+</style>
+</head>
+<body>
+<h1>Feedback Results</h1>
+
+<div id="feedback-results">
+  <div class="alerts">
+    <div class="alert alert-info" role="alert">
+      Loading data, please wait ...
+    </div>
+  </div>
+  <table id="results" class="table table-striped">
+  	<thead class="thead-light">
+  		<tr>
+  			<th scope="col">Code</th>
+  			<th scope="col">Answers</th>
+  			<th scope="col"></th>
+  		</tr>
+  	</thead>
+  	<tbody></tbody>
+  </table>
+</div>
+
+<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
